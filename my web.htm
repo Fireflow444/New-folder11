@@ -1,0 +1,380 @@
+<html>
+	<head>
+<link rel="stylesheet" type="text/css" href="./style.css">
+<link rel="icon" type="icon" href="">
+<title>My first project</title>	
+	</head>
+	<body>
+		<div class="body">
+	<p class="title-p">Please enter your data</p>
+	<h1 class="heading-p">Welcome Bak</h1>
+<input class="inp-type-email inpp1  inp-type inp1" placeholder="Email address" type="email" name="">
+<div class="password">
+<input class="inp-type-password inpp2  inp-type inp2" placeholder="Password" type="password" name="">
+<button class="inp-type inpp3 eye-btn btn3"><eye class="eye-p">&#128065;</eye></button>
+</div>
+
+<div class="check-box">
+	<input class="check-p-inp" type="checkbox" id="reb">
+<label class="check-p" for="reb">Remember for 30days</label>
+	</div>
+<div class="link-box">
+<a class="frgt" href="https://myaccount.google.com/intro/security">Forget password</a>
+<a class="sgin" href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Faccounts.google.com%2F&dsh=S1845647881%3A1763382417130813&followup=https%3A%2F%2Faccounts.google.com%2F&ifkv=ARESoU3CZVe7TCcUOkMhBb6mo9KygA2m6X3210_9KPu9KNZUoJ8RIsTHFfvHoNVgWG8l4JivIV5D2Q&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin">SIGN UP</a>
+	</div>
+<div class="btn-sign-up">
+	<a class="sign-up-a" href="https://accounts.google.com/v3/signin/identifier?dsh=S-2093318632%3A1763382357952166&ifkv=ARESoU0PxEpAKZkQgKl522bqdVAatlIEOLdopgTju1Hf6vL-iylkgderQ4VqxrQZFYizj6vKtY7g&flowName=GlifWebSignIn&flowEntry=ServiceLogin">SIGN IN WITH GOOGLE</a>
+</div>
+<div class="dtn">
+	<p class="title-p2">do not have any account?</p>
+<a class="ag-sign-up" href="https://myaccount.google.com/intro">sign up</a>
+	</div>
+<button class="sun-btn">&#9728;&#65039;</button>
+		</div>
+	
+<script src="js.js"></script>
+	</body>
+</html>
+
+<style>
+	:root{
+--hwcolor:#fff;	
+--hgcolor:#333;
+}
+
+
+body{
+position: relative;
+	font-family: arial;
+	padding: 0;
+	margin: 0;
+	background-color:var(--hgcolor);
+color:#fff;
+display:flex;
+justify-content:center;
+align-content:center;
+transition: 0.2s ease-in-out;
+}
+.body{
+	margin-top:20vh;
+	width:800px;
+	height: 900px;
+	border-radius: 10px;
+box-shadow:inset 0px 1px 2px #333;
+	background-color:#555;
+color:#fff;
+cursor: pointer;
+}
+.title-p{
+	width:400px;
+	position:relative;
+	left:50px;
+	margin-top:100px;
+	font-size:35px;
+	color:#ddd;
+}
+.heading-p{
+	width:700px;
+	position:relative;
+	bottom:10px;
+    left:50px;
+    margin-top:0px;
+    margin-bottom:20px;
+    font-size:80px;
+}
+.ch-pl1::placeholder{
+color:#333 !important;
+}
+.inp-type{
+	font-size:30px;
+margin-bottom:20px;
+width:700px;
+color:#ddd;
+background-color:transparent;
+border:2px solid #ddd;
+border-radius: 10px;
+transition:0.1s ease-in;
+padding:14px 10px;
+position: relative;
+left:50px;
+letter-spacing: 2px;
+padding:20px;
+}
+
+.inp-type:hover{
+border:2px solid #fff;
+}
+.inp-type:active{
+color:#58e977;
+border:2px solid #58e977;
+}
+.inp-type:focus{
+	outline: none;
+}
+.inp-type::placeholder{
+	color:#fff;
+}
+.password{
+position:relative;
+width:350px;
+height:50px;
+margin-left:50px;
+}
+.inp-type-password{
+position: relative;
+left:0;
+margin-bottom: 0;
+}
+.eye-btn{
+	height:50px;
+	width:50px;
+	position: absolute;
+left:640px;
+display:flex;
+justify-content: center;
+align-content: center;
+padding:0;
+position:relative;
+bottom:58px;
+border:2px solid #ddd;
+margin-bottom: 0;
+border-radius: 50px;
+}
+.eye-p{
+	position:relative;
+	top:2px;
+  left: 1px;
+}
+.check-p-inp[type="checkbox"]{
+	opacity: 0;
+	position: absolute;
+}
+.check-p-inp[type="checkbox"]:checked + label[for="reb"]{
+background-color: transparent;
+}
+.check-p-inp[type="checkbox"]:checked + label[for="reb"]::after{
+content:' ✓';
+
+text-align: center;
+}
+
+.check-box{
+width:400px;
+height:50px;
+display: flex;
+justify-content:space-around;
+align-items: center;
+margin-top: 40px;
+font-size:25px;
+margin-left:10px;
+}
+.link-box{
+	margin-top:20px;
+	width:80%;
+	margin-left:85px;
+display: flex;
+justify-content:space-between;
+font-size: 25px;
+}
+.frgt{
+	text-decoration: none;
+color:#fff;
+}
+.frgt:hover{
+	color:#58e977;
+	text-decoration: underline;
+}
+.sgin{
+	text-decoration: none;
+color:#fff;	
+}
+.sgin:hover{
+	text-decoration: underline;
+}
+.sign-up-a{
+width:450px;
+height:90px;
+color:#fff;
+text-decoration:none;
+border:2px solid #fff;
+border-radius:10px;	
+display:flex;
+align-items: center;
+font-size:33px;
+justify-content: center;
+margin-top:40px;
+margin-left:20%;
+transition:0.1s ease-in-out;
+}
+.sign-up-a:hover{
+border-radius: 10px;
+transform: scale(105%);
+}
+
+.dtn{
+width:500px;
+height:40px;
+margin-top:60px;
+margin-left:50px;
+font-size: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+gap:10px;
+}
+.ag-sign-up{
+	color:#fff;
+}
+.ag-sign-up:hover{
+color:red;
+}
+.sun-btn{
+width:50px;
+height:50px;
+font-size: 40px;
+border-radius: 4px;
+border: none;
+background-color:transparent;
+color: orange;
+margin-left: 89%;
+margin-top: 10px;
+transition: 0.1s ease-in-out;
+}
+.sun-btn:hover{
+	color:yellow;
+	transform: scale(105%);
+}
+</style>
+<script>
+	{
+	let sunbtn=document.querySelector(".sun-btn");
+let click=0;
+	sunbtn.addEventListener("click",()=>{
+click+=1;
+if(click%2==0){
+	black();
+}
+else{
+white();
+}
+
+function white(){
+setTimeout(function() {
+		let ch=document.querySelector("body");
+ch.style.backgroundColor="#fff";
+}, 100);
+
+
+let ch2=document.querySelector(".body");
+ch2.style.backgroundColor="#fff";
+
+let ch3=document.querySelector(".title-p");
+ch3.style.color="#333";
+
+let ch4=document.querySelector(".heading-p");
+ch4.style.color="#111";
+
+let ch5=document.querySelector(".inp-type");
+ch5.style.color="#111";
+ch5.style.border="2px solid #111";
+ch5.classList.replace("inpp1","ch-pl1");
+
+let ch6=document.querySelector(".inp2");
+ch6.style.color="#111";
+ch6.style.border="2px solid #111";
+ch6.classList.replace("inpp2","ch-pl1");
+
+let ch7=document.querySelector(".eye-btn");
+ch7.style.color="#111";
+ch7.style.border="2px solid #111";
+ch7.classList.replace(".eye-btn","ch-pl1");
+
+
+
+let ch8=document.querySelector(".check-box");
+ch8.style.color="#111";
+
+let ch9=document.querySelector(".frgt");
+ch9.style.color="#111";
+
+let ch10=document.querySelector(".sgin");
+ch10.style.color="#111";
+
+let ch11=document.querySelector(".sign-up-a");
+ch11.style.color="#111";
+ch11.style.border="2px solid #111";
+
+let ch12=document.querySelector(".title-p2");
+ch12.style.color="#111";
+
+let ch13=document.querySelector(".ag-sign-up");
+ch13.style.color="#111";
+
+let ch14=document.querySelector(".sun-btn");
+ch14.innerHTML="&#127770;";
+ch14.style.color="#111";
+
+}
+
+	});
+	console.log(sunbtn);
+}
+function black(){
+setTimeout(function() {
+		let ch=document.querySelector("body");
+ch.style.backgroundColor="#333";
+}, 100);	
+
+let ch2=document.querySelector(".body");
+ch2.style.backgroundColor="#555";
+
+let ch3=document.querySelector(".title-p");
+ch3.style.color="#ddd";
+
+let ch4=document.querySelector(".heading-p");
+ch4.style.color="#ddd";
+
+let ch5=document.querySelector(".inp-type");
+ch5.style.color="#ddd";
+ch5.style.border="2px solid #ddd";
+ch5.classList.replace("ch-pl1","inpp1");
+
+let ch6=document.querySelector(".inp2");
+ch6.style.color="#ddd";
+ch6.style.border="2px solid #ddd";
+ch6.classList.replace("ch-pl1","inpp2");
+
+let ch7=document.querySelector(".btn3");
+ch7.style.color="#ddd";
+ch7.style.border="2px solid #ddd";
+ch7.classList.replace("ch-pl1",".btn3");
+
+
+
+let ch8=document.querySelector(".check-box");
+ch8.style.color="#ddd";
+
+let ch9=document.querySelector(".frgt");
+ch9.style.color="#ddd";
+
+
+let ch10=document.querySelector(".sgin");
+ch10.style.color="#ddd";
+
+let ch11=document.querySelector(".sign-up-a");
+ch11.style.color="#ddd";
+ch11.style.border="2px solid #ddd";
+
+let ch12=document.querySelector(".title-p2");
+ch12.style.color="#ddd";
+
+let ch13=document.querySelector(".ag-sign-up");
+ch13.style.color="#ddd";
+
+let ch14=document.querySelector(".sun-btn");
+ch14.innerHTML="&#x2600;&#xfe0f;";
+ch14.style.color="#ddd";
+}
+
+
+</script>
